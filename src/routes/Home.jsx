@@ -6,6 +6,7 @@ const Home = () => {
   const [ cartCount, setCartCount ] = useState(0);
 
   useEffect(() => { 
+    if(!JSON.parse(localStorage.getItem("items")).length) return;
     const localStorageProducts = JSON.parse(localStorage.getItem("items")).length;
     if(!localStorageProducts) return;
     setCartCount(localStorageProducts);
