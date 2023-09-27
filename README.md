@@ -8,6 +8,7 @@ Rap Products é um mini projeto de um e-commerce, onde você pode comprar albuns
 - Contagem de produtos no carrinho.
 - Página do carrinho, onde é possível aumentar e diminuir a quantidade, além de remover produtos.
 - Valor total do carrinho, calculado automático.
+- Produtos no carrinho são adicionados ao local storage.
 - Menu mobile responsivo, com uma leve animação.
 
 ## MOBILE
