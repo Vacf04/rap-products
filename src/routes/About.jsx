@@ -5,9 +5,9 @@ import AboutContent from '../components/AboutContent';
 const About = () => {
   const [ cartCount, setCartCount ] = useState(0);
 
-  useEffect(() => { 
+  useEffect(() => {
+    if(!JSON.parse(localStorage.getItem("items"))) return;
     const localStorageProducts = JSON.parse(localStorage.getItem("items")).length;
-    if(!localStorageProducts) return;
     setCartCount(localStorageProducts);
   },[]);
 
